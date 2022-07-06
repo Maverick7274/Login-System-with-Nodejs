@@ -1,0 +1,31 @@
+{
+  "name": "login-system-with-nodejs",
+  "version": "1.0.0",
+  "description": "Goal is to make an API which will be integrated with RetroFit which can be used in Android Development",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maverick7274/Login-System-with-Nodejs.git"
+  },
+  "author": "Neelanjan Mukherji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maverick7274/Login-System-with-Nodejs/issues"
+  },
+  "homepage": "https://github.com/Maverick7274/Login-System-with-Nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
