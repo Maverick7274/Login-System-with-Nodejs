@@ -14,6 +14,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use('/api/goals', require('./routes/routes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 
