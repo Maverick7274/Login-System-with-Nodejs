@@ -1,11 +1,14 @@
 const express = require('express')
 const dotenv = require('dotenv').config()
+const colors = require('colors')
 const {errorHandler} = require('./middleware/errorMiddleware')
+const connectDB = require('./config/db')
 const port = process.env.PORT || 4000
 
-const bodyParser = require('body-parser')
+connectDB()
 
 const app = express()
+const bodyParser = require('body-parser')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
