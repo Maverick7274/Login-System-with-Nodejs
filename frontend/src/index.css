@@ -41,8 +41,8 @@
 
 .login-btn:hover
 {
-  color: #fb6667;
-  background: #273880;
+  color: #203e54;
+  background: #59c2c8;
 }
 
 body
@@ -94,6 +94,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: center;
   color: #203e54;
+  font-size: 1.4rem;
   
 }
 
@@ -266,4 +267,13 @@ input:focus::placeholder
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+}
+
+
+.fa
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

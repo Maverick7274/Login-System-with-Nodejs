@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {FaSignInAlt} from 'react-icons/fa'
+import {FaSignInAlt, FaSign} from 'react-icons/fa'
 
 function Login() {
     const [formData, setFormData] = useState({
@@ -24,7 +24,10 @@ function Login() {
     <div className= "registration login-main">
       <section className="heading login-heading">
         <h2>
-          <FaSignInAlt />Login
+          <div className='fa'>
+            <FaSign />
+              Login
+          </div>
         </h2>
         <p>Please Login to your Existing Account</p>
       </section>
