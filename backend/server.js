@@ -5,6 +5,8 @@ const {errorHandler} = require('./middleware/errorMiddleware')
 const connectDB = require('./config/db')
 const port = process.env.PORT || 4000
 
+const url = `http://localhost:${port}`.bgBlack.magenta
+
 connectDB()
 
 const app = express()
@@ -18,4 +20,4 @@ app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 
-app.listen(port, () => console.log(`Server Started on Port ${port}`))
+app.listen(port, () => console.log(`Server Started on Port ${url}/`))
