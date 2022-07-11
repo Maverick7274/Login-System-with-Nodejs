@@ -5,6 +5,8 @@ import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import {FaUser} from 'react-icons/fa'
 import { register, reset } from '../features/auth/authSlice'
+import Spinner from '../components/Spinner'
+
 
 function Register() {
     const [formData, setFormData] = useState({
@@ -53,8 +55,13 @@ function Register() {
           email,
           password,
         }
+
         dispatch(register(userData))
       }
+    }
+
+    if(isloading) {
+      return <Spinner />
     }
 
     return <>
@@ -72,25 +79,53 @@ function Register() {
               Name:
             </div>
             <div className="form-group">
-              <input type="text" className='form-control' id='name' name='name' value={name} placeholder="Enter Your Name" onChange={onChange}/>
+              <input 
+                    type="text"
+                    className='form-control'
+                    id='name'
+                    name='name'
+                    value={name}
+                    placeholder="Enter Your Name"
+                    onChange={onChange}/>
             </div>
             <div className="placeholder">
               E-Mail:
             </div>
             <div className="form-group">
-              <input type="text" className='form-control' id='email' name='email' value={email} placeholder="Enter Your E-Mail" onChange={onChange}/>
+              <input
+                    type="text"
+                    className='form-control'
+                    id='email'
+                    name='email'
+                    value={email}
+                    placeholder="Enter Your E-Mail"
+                    onChange={onChange}/>
             </div>
             <div className="placeholder">
               Password:
             </div>
             <div className="form-group">
-              <input type="password" className='form-control' id='password' name='password' value={password} placeholder="Enter Your Password" onChange={onChange}/>
+              <input
+                    type="password"
+                    className='form-control'
+                    id='password'
+                    name='password'
+                    value={password}
+                    placeholder="Enter Your Password"
+                    onChange={onChange}/>
             </div>
             <div className="placeholder">
               Confirm Password:
             </div>
             <div className="form-group">
-              <input type="password" className='form-control' id='password2' name='password2' value={password2} placeholder="Confirm Your Password" onChange={onChange}/>
+              <input
+                    type="password"
+                    className='form-control'
+                    id='password2'
+                    name='password2'
+                    value={password2}
+                    placeholder="Confirm Your Password"
+                    onChange={onChange}/>
             </div>
           </div>
           <div className="form-btn">
