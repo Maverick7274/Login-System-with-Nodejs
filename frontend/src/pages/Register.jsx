@@ -50,6 +50,7 @@ function Register() {
       if(password !== password2){
         toast.error("Passwords Do not Match")
       } else{
+        toast.success("User Created Successfully")
         const userData = {
           name,
           email,

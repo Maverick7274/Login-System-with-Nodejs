@@ -21,6 +21,7 @@ const login = async (userData) => {
     if(response.data)
     {
         localStorage.setItem('user', JSON.stringify(response.data))
+
     }
 
     return response.data
@@ -31,6 +32,7 @@ const login = async (userData) => {
 
 const logOut = () => {
     localStorage.removeItem('user')
+    // toast.success("User Logged Out Succesfully")
 }
 
 const authService = {
