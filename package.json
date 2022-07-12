@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Maverick7274/Login-System-with-Nodejs/issues"
   },
-  "homepage": "https://github.com/Maverick7274/Login-System-with-Nodejs#readme",
+  "homepage": "https://github.com/Maverick7274/Login-System-with-Nodejs",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
