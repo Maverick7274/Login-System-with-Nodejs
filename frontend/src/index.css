@@ -113,6 +113,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   color: #203e54;
   font-size: 1.4rem;
+  position: fixed;
+  top: 0;
   
 }
 
@@ -215,7 +217,7 @@ li
   height: 630px;
   background: #59c2c8;
   border-radius: 6px;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 
@@ -268,7 +270,7 @@ input:focus::placeholder
 
 .login-main
 {
-  margin-top: 120px;
+  margin-top: 200px;
   height: 430px;
   background: #203e54;
   color: #0f080b;
