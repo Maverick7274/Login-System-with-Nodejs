@@ -15,8 +15,13 @@ N - Node.js
 
 You can fork the repository in order to make the API even more powerful.
 
-![Semantic description of image](/Login-System-with-Nodejs/resources/Forked.gif "Image Title")
+# Forking a Repository in BitBucket
 
+![Forking a Repository in BitBucket](./resources/Forking%20a%20Repository.gif "Forking a Repository")
+
+# Forking a Repository in GitHub
+
+![Forking a Repository in GitHub](./resources/Forked.gif "Forking a Repository")
 
 After forking the Repository you can clone the project in your local machine,by copying the git url of the repository.
 
