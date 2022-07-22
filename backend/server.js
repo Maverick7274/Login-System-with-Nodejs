@@ -4,7 +4,7 @@ const colors = require('colors')
 const {errorHandler} = require('./middleware/errorMiddleware')
 const connectDB = require('./config/db')
 const cors = require('cors')
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 8000
 
 const url = `http://localhost:${port}`.bgBlack.magenta
 
@@ -17,11 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 
-app.use(
-    cors({
-        origin: url,
-    })
-)
+app.use(cors())
 
 app.use('/api/goals', require('./routes/routes'))
 app.use('/api/users', require('./routes/userRoutes'))
